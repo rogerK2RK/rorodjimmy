@@ -26,25 +26,25 @@ img {
   width: 25%;
 }
 
-.form-add-movie {
+.form-add-movie, .movie-detail form {
   margin: 30px 37.5%;
   background-color: #1a1a1a;
   width: 25%;
   padding: 20px 50px;
-  text-align: justify;
+  text-align: left;
 }
 
 .form-add-movie label {
   text-align: left;
 }
 
-.form-add-movie input {
+.form-add-movie input, .movie-detail input{
   width: 100%;
   height: 25px;
   margin-bottom: 10px;
 }
 
-.form-add-movie button {
+.form-add-movie button, .movie-detail button {
   margin-top: 15px;
   background-color: #242424;
   border: 1px solid #858585;
