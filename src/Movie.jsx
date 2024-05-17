@@ -55,26 +55,35 @@ const Movie = () => {
     return (
         <div className="movie-detail">
             <button onClick={() => navigate('/') } >Home</button><br />
-            <img src={movie.image} alt={movie.title} /><br />
-            <h1>{movie.title}</h1>
-            <p>Genre: {movie.genre}</p>
-            <h2>Modifier le film</h2>
-            <form onSubmit={handleUpdate}>
+            <div className='box-flx'>
                 <div>
-                    <label>Titre : </label>
-                    <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
+                    <img src={movie.image} alt={movie.title} /><br />
+                    <h1>{movie.title}</h1>
+                    <p>Genre: {movie.genre}</p>
                 </div>
-                <div>
-                    <label>Genre : </label>
-                    <input type="text" value={genre} onChange={(e) => setGenre(e.target.value)} required />
-                </div>
-                <div>
-                    <label>Lien Image : </label>
-                    <input type="text" value={image} onChange={(e) => setImage(e.target.value)} required />
-                </div>
-            <button type="submit">Mettre à jour</button>
-            </form>
-            {message && <p>{message}</p>}
+                <form onSubmit={handleUpdate}>
+                    <h2>Modifier le film</h2>
+                    <div>
+                        <label>Titre : </label>
+                        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
+                    </div>
+                    <div>
+                        <label>Genre : </label>
+                        <input type="text" value={genre} onChange={(e) => setGenre(e.target.value)} required />
+                    </div>
+                    <div>
+                        <label>Lien Image : </label>
+                        <input type="text" value={image} onChange={(e) => setImage(e.target.value)} required />
+                    </div>
+                    <button type="submit">Mettre à jour</button>
+                    {message && <p>{message}</p>}
+                </form>
+            </div>
+            
+            
+            
+            
+            
         </div>
     )
 }
