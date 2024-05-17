@@ -8,7 +8,7 @@ const MyRouter = () => {
         <> 
             <Routes>
                 <Route path='/' element={<App />} />
-                <Route path='/movie/:userId' element={<Movie />} />
+                <Route path='/movie/:id' element={<Movie />} />
                 <Route path='*' element={<h1>404 page not found</h1>} />
             </Routes>
         </>
